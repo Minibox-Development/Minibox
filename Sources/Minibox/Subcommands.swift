@@ -12,8 +12,7 @@ extension Minibox {
     struct Create: ParsableCommand {
         @OptionGroup var options: Minibox.Options
         static let configuration = CommandConfiguration(
-            abstract: "Create a box",
-            aliases: ["c"]
+            abstract: "Create a box"
         )
         mutating func run() {
             print("Creating box \"" + options.name + "\"")
@@ -31,7 +30,7 @@ extension Minibox {
                 }
             } catch {
                 // And if there's an error
-                print("Sorry, an error has occured. Please try again or make a new issue at https://github.com/wannafedor4/Minibox")
+                print("Sorry, an error has occured. Please try again, or make a new issue at https://github.com/wannafedor4/Minibox")
             }
         }
     }
