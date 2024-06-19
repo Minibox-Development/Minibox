@@ -24,7 +24,7 @@ extension Minibox {
                 // Make a directory at containerURL
                 // Error if there is nothing in containerURL somehow
                 try FileManager.default.createDirectory(at: containerURL, withIntermediateDirectories: true)
-                if options.verbose == true {
+                if options.verbose {
                     // Error, again, if there is nothing in containerURL
                     try print("Creating directory at " + String(contentsOf: containerURL))
                 }
